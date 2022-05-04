@@ -106,7 +106,7 @@ class MyClassifier:
         hu[4] = q0 * t0 + q1 * t1;
         hu[6] = q1 * t0 - q0 * t1;
 
-        return hu
+        return np.array(hu) * 1e6
     
     def reduce_color(img, kmeans): 
         """
